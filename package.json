@@ -10,9 +10,12 @@
   },
   "author": "",
   "devDependencies": {
+    "@parcel/optimizer-data-url": "^2.8.3",
     "@parcel/reporter-bundle-analyzer": "^2.8.3",
+    "@parcel/transformer-inline-string": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3",
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "sharp": "^0.31.3"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
