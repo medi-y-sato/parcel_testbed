@@ -39,7 +39,7 @@ jobs:
       - name: build with parcel
         run: |
           npm install
-          npm run build-ghpages
+          npm run ci
 
       - name: deply toGitHub Pages
         if: success()

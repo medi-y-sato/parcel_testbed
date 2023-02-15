@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "prebuild": "npx rimraf build",
+    "preserve": "npx rimraf dist",
+    "prebuild": "npx rimraf dist",
     "serve": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html",
     "test": "jest",
