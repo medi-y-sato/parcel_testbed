@@ -1,4 +1,5 @@
 <?xml-stylesheet href="../scss/styles.scss" ?>
 <svg viewBox="0 0 240 24" xmlns="http://www.w3.org/2000/svg">
   <text id="header" x="9" y="12">parcel testbed</text>
+  <image href="../images/awagu39.png?width=4&as=webp" x="0" y="12" />
 </svg>
