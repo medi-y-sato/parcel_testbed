@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: build with parcel
+        run: |
+          npm install
+          npm run build
+
+      - name: deply toGitHub Pages
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with: 
+          build_dir: ./dist/
+          verbose: true
+
