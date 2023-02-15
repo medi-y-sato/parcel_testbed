@@ -3,6 +3,8 @@ name: CI
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
   workflow_dispatch:
 
@@ -42,7 +44,9 @@ jobs:
           npm run ci
 
       - name: deply toGitHub Pages
-        if: success()
+        if: ->
+          success() &&
+          github.ref == 'refs/heads/master'
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           build_dir: ./dist/
