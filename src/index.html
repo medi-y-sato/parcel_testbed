@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>parcel testbed</title>
     <link rel="stylesheet" href="scss/styles.scss" />
-    <script src="./index.ts" type="module"></script>
+    <script src="./ts/index.ts" type="module"></script>
   </head>
   <body>
-    <div class="container" id="header"><h1>parcel testbed</h1></div>
+    <div class="container" id="header" class="header-logo">
+      <h1>
+        <object type="image/svg+xml" data="./svg/logo.svg"></object>
+      </h1>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col col-md-auto" id="sidebar">
@@ -17,6 +21,7 @@
         <div class="col" id="main">
           <p>右サイドの画像自体が表示される領域</p>
           <p><button class="btn btn-primary">Primary button</button></p>
+          <div><img src="images/awagu39.png?width=256" /></div>
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ jobs:
       - name: CI
         run: |
           npm install
-          npm run build
+          npm run ci
 
       - name: build with parcel
         if: >-
