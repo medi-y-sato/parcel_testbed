@@ -38,15 +38,18 @@ jobs:
           key: npm-${{ hashFiles('package-lock.json') }}
           restore-keys: npm-
 
-      - name: build with parcel
+      - name: CI
         run: |
           npm install
           npm run ci
 
-      - name: deply toGitHub Pages
+      - name: build with parcel
         if: >-
           success() &&
           github.ref == 'refs/heads/main'
+        run: npm run build-ghpages
+
+      - name: deply to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           build_dir: ./dist/
