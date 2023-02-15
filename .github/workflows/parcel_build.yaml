@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
   workflow_dispatch:
 
@@ -22,7 +22,6 @@ jobs:
 
       - name: deply toGitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
-        with: 
+        with:
           build_dir: ./dist/
           verbose: true
-
