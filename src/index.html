@@ -3,23 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>画像ビューア</title>
+    <title>parcel testbed</title>
     <link rel="stylesheet" href="scss/styles.scss" />
     <script src="./index.ts" type="module"></script>
   </head>
   <body>
-    <div class="container"><h1>画像ビューア</h1></div>
+    <div class="container" id="header"><h1>parcel testbed</h1></div>
     <div class="container">
       <div class="row">
-        <div class="col col-md-auto">
+        <div class="col col-md-auto" id="sidebar">
           <p>左サイドの画像ファイル一覧</p>
         </div>
-        <div class="col">
+        <div class="col" id="main">
           <p>右サイドの画像自体が表示される領域</p>
           <p><button class="btn btn-primary">Primary button</button></p>
         </div>
       </div>
     </div>
-    <div class="container"><address>著作表記</address></div>
+    <div class="container" id="footer"><address>著作表記</address></div>
   </body>
 </html>
