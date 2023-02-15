@@ -1,18 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./svg.scss";
 
-#header{
-    background-color:#d0ffff;
-    background: url(../images/awagu39.png);
+#header {
+  background-color: #d0ffff;
+  background: url(../images/awagu39.png);
 }
-#footer{
-    background-color:#ffd0ff;
-    background: url(../images/awagu40.png?width=64);
+#footer {
+  background-color: #ffd0ff;
+  background: url(../images/awagu40.png?width=64);
 }
-#sidebar{
-    background-color:#ffffd0;
-    background: url('data-url:../images/awagu41.png?width=128');
+#sidebar {
+  background-color: #ffffd0;
+  background: url("data-url:../images/awagu41.png?width=128");
 }
-#main{
-    background-color:#d0d0d0;
-    background: url('data-url:../images/awagu42.png');
+#main {
+  background-color: #d0d0d0;
+  background: url("data-url:../images/awagu42.png");
+}
+
+.header-logo {
+  background-color: white;
 }

@@ -1,5 +1,4 @@
-<?xml-stylesheet href="./style.scss" ?>
+<?xml-stylesheet href="../scss/styles.scss" ?>
 <svg viewBox="0 0 240 24" xmlns="http://www.w3.org/2000/svg">
-  <text id="header" x="0" y="18">parcel testbed</text>
-  <circle cx="240" cy="10" r="8" />
+  <text id="header" x="9" y="12">parcel testbed</text>
 </svg>
