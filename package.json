@@ -5,7 +5,8 @@
   "scripts": {
     "prebuild": "npx rimraf build",
     "serve": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html",
+    "build-ghpages": "parcel build ./src/index.html --public-url https://medi-y-sato.github.io/parcel_testbed/"
   },
   "author": "",
   "devDependencies": {
