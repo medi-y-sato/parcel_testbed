@@ -1,0 +1,5 @@
+<?xml-stylesheet href="./style.scss" ?>
+<svg viewBox="0 0 240 24" xmlns="http://www.w3.org/2000/svg">
+  <text id="header" x="0" y="18">parcel testbed</text>
+  <circle cx="240" cy="10" r="8" />
+</svg>
