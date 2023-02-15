@@ -1,0 +1,20 @@
+{
+  "name": "blog-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prebuild": "npx rimraf build",
+    "serve": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3"
+  }
+}
