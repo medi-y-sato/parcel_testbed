@@ -46,7 +46,7 @@ jobs:
       - name: deply toGitHub Pages
         if: >-
           success() &&
-          github.ref == 'refs/heads/master'
+          github.ref == 'refs/heads/main'
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           build_dir: ./dist/
