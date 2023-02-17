@@ -20,7 +20,6 @@ class Main {
   }
 
   async start() {
-    const fileList: Array<string> = await this.getFileList();
     const fileData = await fs.readFileSync(
       path.join(__dirname, "../data.json"),
       "utf8"
@@ -32,10 +31,8 @@ class Main {
       this.sidebar.innerHTML += `<li>${jsonData.id} : ${jsonData.data}</li>`;
     });
     this.sidebar.innerHTML += "</ul>";
-  }
 
-  async getFileList() {
-    return [];
+    this.mainContent.innerHTML = "<p>TypeScriptから書いてます</p>";
   }
 
   getDom(): returnDom {
