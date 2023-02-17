@@ -16,7 +16,6 @@
   "author": "",
   "devDependencies": {
     "@parcel/optimizer-data-url": "^2.8.3",
-    "@parcel/reporter-bundle-analyzer": "^2.8.3",
     "@parcel/transformer-inline-string": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3",
     "@types/jest": "^29.4.0",
