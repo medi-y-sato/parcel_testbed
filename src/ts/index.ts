@@ -3,14 +3,19 @@ import * as path from "path";
 import * as bootstrap from "bootstrap";
 import logger from "./logger";
 
+interface returnDom {
+  sidebar: HTMLDivElement;
+  mainContent: HTMLDivElement;
+}
+
 class Main {
-  sidebar;
-  mainContent;
+  sidebar: HTMLDivElement;
+  mainContent: HTMLDivElement;
 
   constructor() {
     new logger().log("Main constructor");
     const ret = this.getDom();
-    this.sidebar = ret.sidebar as HTMLDivElement;
+    this.sidebar = ret.sidebar;
     this.mainContent = ret.mainContent as HTMLDivElement;
   }
 
@@ -33,9 +38,9 @@ class Main {
     return [];
   }
 
-  getDom() {
-    const sidebar = document.querySelector("#sidebar");
-    const mainContent = document.querySelector("#main");
+  getDom(): returnDom {
+    const sidebar = document.querySelector("#sidebar") as HTMLDivElement;
+    const mainContent = document.querySelector("#main") as HTMLDivElement;
     if (!sidebar || !mainContent) {
       throw new Error("DOMが取れませんでした");
     }
